@@ -1,0 +1,3 @@
+﻿Warning Emails
+
+-RomID 0800000326183F28 receives one email per hour.

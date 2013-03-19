@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AFF30A3D-8766-44C1-931F-247ED62E0700}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NatureWorksFridgeMonitoring</RootNamespace>
+    <AssemblyName>NatureWorksFridgeMonitoring</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\NatureWorksFridgeMonitoring.XML</DocumentationFile>
+    <includesetaclproviderondestination>False</includesetaclproviderondestination>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IncludesetAclprOviderOnDestination>False</IncludesetAclprOviderOnDestination>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="fastJSON">
+      <HintPath>References\fastJSON.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="%40knownIssues.txt" />
+    <Content Include="%40romIdList.txt" />
+    <Content Include="animated_favicon1.gif" />
+    <Content Include="assets-85\js-ALPHA\bigfont.charting.js" />
+    <Content Include="assets-85\js-ALPHA\bigfont.datetime.js" />
+    <Content Include="assets-85\js-ALPHA\bigfont.progress.js" />
+    <Content Include="assets-85\js-ALPHA\bigfont.constants.js" />
+    <Content Include="assets-85\js-ALPHA\bigfont.js" />
+    <Content Include="assets-85\js-ALPHA\jquery.flot.js" />
+    <Content Include="assets-85\js-ALPHA\jquery.flot.selection.js" />
+    <Content Include="assets-85\js-ALPHA\jquery.js" />
+    <Content Include="assets-85\js-ALPHA\jquery.validate.additional-methods.js" />
+    <Content Include="assets-85\js-ALPHA\jquery.validate.even-more-methods.js" />
+    <Content Include="assets-85\js-ALPHA\jquery.validate.js" />
+    <Content Include="assets-85\js-ALPHA\json2.js" />
+    <Content Include="assets-85\js-ALPHA\modernizr.custom.88457.js" />
+    <Content Include="assets-85\js-ALPHA\site.js" />
+    <Content Include="assets-85\css\site.css" />
+    <Content Include="assets-85\img\logo.JPG" />
+    <Content Include="assets-85\js\bigfont.charting.js" />
+    <Content Include="assets-85\js\bigfont.constants.js" />
+    <Content Include="assets-85\js\bigfont.datetime.js" />
+    <Content Include="assets-85\js\bigfont.progress.js" />
+    <Content Include="assets-85\js\jquery.js" />
+    <Content Include="assets-85\js\jquery.validate.even-more-methods.js" />
+    <Content Include="assets-85\js\json2.js" />
+    <Content Include="assets-85\js\jquery.flot.js" />
+    <Content Include="assets-85\js\jquery.validate.js" />
+    <Content Include="assets-85\js\jquery.validate.additional-methods.js" />
+    <Content Include="assets-85\js\modernizr.custom.88457.js" />
+    <Content Include="assets-85\js\site.js" />
+    <Content Include="assets-85\js\bigfont.js" />
+    <Content Include="changelog.txt" />
+    <Content Include="alpha.htm" />
+    <Content Include="flot-0.7\flot\examples\navigate_bigfont.html" />
+    <Content Include="flot-0.7\flot\jquery.flot.selection.js" />
+    <Content Include="index.htm" />
+    <Content Include="flot-0.7\flot\API.txt" />
+    <Content Include="flot-0.7\flot\examples\ajax.html" />
+    <Content Include="flot-0.7\flot\examples\annotating.html" />
+    <Content Include="flot-0.7\flot\examples\arrow-down.gif" />
+    <Content Include="flot-0.7\flot\examples\arrow-left.gif" />
+    <Content Include="flot-0.7\flot\examples\arrow-right.gif" />
+    <Content Include="flot-0.7\flot\examples\arrow-up.gif" />
+    <Content Include="flot-0.7\flot\examples\basic.html" />
+    <Content Include="flot-0.7\flot\examples\graph-types.html" />
+    <Content Include="flot-0.7\flot\examples\hs-2004-27-a-large_web.jpg" />
+    <Content Include="flot-0.7\flot\examples\image.html" />
+    <Content Include="flot-0.7\flot\examples\index.html" />
+    <Content Include="flot-0.7\flot\examples\interacting-axes.html" />
+    <Content Include="flot-0.7\flot\examples\interacting.html" />
+    <Content Include="flot-0.7\flot\examples\layout.css" />
+    <Content Include="flot-0.7\flot\examples\multiple-axes.html" />
+    <Content Include="flot-0.7\flot\examples\navigate.html" />
+    <Content Include="flot-0.7\flot\examples\percentiles.html" />
+    <Content Include="flot-0.7\flot\examples\pie.html" />
+    <Content Include="flot-0.7\flot\examples\realtime.html" />
+    <Content Include="flot-0.7\flot\examples\resize.html" />
+    <Content Include="flot-0.7\flot\examples\selection.html" />
+    <Content Include="flot-0.7\flot\examples\setting-options.html" />
+    <Content Include="flot-0.7\flot\examples\stacking.html" />
+    <Content Include="flot-0.7\flot\examples\symbols.html" />
+    <Content Include="flot-0.7\flot\examples\thresholding.html" />
+    <Content Include="flot-0.7\flot\examples\time.html" />
+    <Content Include="flot-0.7\flot\examples\tracking.html" />
+    <Content Include="flot-0.7\flot\examples\turning-series.html" />
+    <Content Include="flot-0.7\flot\examples\visitors.html" />
+    <Content Include="flot-0.7\flot\examples\zooming.html" />
+    <Content Include="flot-0.7\flot\excanvas.js" />
+    <Content Include="flot-0.7\flot\excanvas.min.js" />
+    <Content Include="flot-0.7\flot\FAQ.txt" />
+    <Content Include="flot-0.7\flot\jquery.colorhelpers.js" />
+    <Content Include="flot-0.7\flot\jquery.colorhelpers.min.js" />
+    <Content Include="flot-0.7\flot\jquery.flot.crosshair.js" />
+    <Content Include="flot-0.7\flot\jquery.flot.crosshair.min.js" />
+    <Content Include="flot-0.7\flot\jquery.flot.fillbetween.js" />
+    <Content Include="flot-0.7\flot\jquery.flot.fillbetween.min.js" />
+    <Content Include="flot-0.7\flot\jquery.flot.image.js" />
+    <Content Include="flot-0.7\flot\jquery.flot.image.min.js" />
+    <Content Include="flot-0.7\flot\jquery.flot.js" />
+    <Content Include="flot-0.7\flot\jquery.flot.min.js" />
+    <Content Include="flot-0.7\flot\jquery.flot.navigate.js" />
+    <Content Include="flot-0.7\flot\jquery.flot.navigate.min.js" />
+    <Content Include="flot-0.7\flot\jquery.flot.pie.js" />
+    <Content Include="flot-0.7\flot\jquery.flot.pie.min.js" />
+    <Content Include="flot-0.7\flot\jquery.flot.resize.js" />
+    <Content Include="flot-0.7\flot\jquery.flot.resize.min.js" />
+    <Content Include="assets-85\js\jquery.flot.selection.js" />
+    <Content Include="flot-0.7\flot\jquery.flot.selection.min.js" />
+    <Content Include="flot-0.7\flot\jquery.flot.stack.js" />
+    <Content Include="flot-0.7\flot\jquery.flot.stack.min.js" />
+    <Content Include="flot-0.7\flot\jquery.flot.symbol.js" />
+    <Content Include="flot-0.7\flot\jquery.flot.symbol.min.js" />
+    <Content Include="flot-0.7\flot\jquery.flot.threshold.js" />
+    <Content Include="flot-0.7\flot\jquery.flot.threshold.min.js" />
+    <Content Include="flot-0.7\flot\jquery.js" />
+    <Content Include="flot-0.7\flot\jquery.min.js" />
+    <Content Include="flot-0.7\flot\LICENSE.txt" />
+    <Content Include="flot-0.7\flot\NEWS.txt" />
+    <Content Include="flot-0.7\flot\PLUGINS.txt" />
+    <Content Include="flot-0.7\flot\README.txt" />
+    <Content Include="WcfRestService.svc" />
+    <Content Include="favicon.ico" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="zooming.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IWcfRestService.cs" />
+    <Compile Include="WcfRestService.svc.cs">
+      <DependentUpon>WcfRestService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="flot-0.7\flot\examples\data-eu-gdp-growth-1.json" />
+    <None Include="flot-0.7\flot\examples\data-eu-gdp-growth-2.json" />
+    <None Include="flot-0.7\flot\examples\data-eu-gdp-growth-3.json" />
+    <None Include="flot-0.7\flot\examples\data-eu-gdp-growth-4.json" />
+    <None Include="flot-0.7\flot\examples\data-eu-gdp-growth-5.json" />
+    <None Include="flot-0.7\flot\examples\data-eu-gdp-growth.json" />
+    <None Include="flot-0.7\flot\examples\data-japan-gdp-growth.json" />
+    <None Include="flot-0.7\flot\examples\data-usa-gdp-growth.json" />
+    <None Include="flot-0.7\flot\Makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55193</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <EnableWcfTestClientForSVCDefaultValue>True</EnableWcfTestClientForSVCDefaultValue>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,63 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Flot Examples</title>
+    <link href="layout.css" rel="stylesheet" type="text/css">
+    <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="../excanvas.min.js"></script><![endif]-->
+    <script language="javascript" type="text/javascript" src="../jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="../jquery.flot.js"></script>
+    <script language="javascript" type="text/javascript" src="../jquery.flot.navigate.js"></script>
+    <style type="text/css">
+    #placeholder .button {
+        position: absolute;
+        cursor: pointer;
+    }
+    #placeholder div.button {
+        font-size: smaller;
+        color: #999;
+        background-color: #eee;
+        padding: 2px;
+    }
+    .message {
+        padding-left: 50px;
+        font-size: smaller;
+    }
+    </style>
+ </head>
+ <body>
+    <h1>Flot Examples</h1>
+
+    <div id="placeholder" style="width:600px;height:300px;"></div>
+
+<script type="text/javascript">
+$(function () {
+    // generate data set from a parametric function with a fractal
+    // look
+    function sumf(f, t, m) {
+        var res = 0;
+        for (var i = 1; i < m; ++i)
+            res += f(i * i * t) / (i * i);
+        return res;
+    }
+    
+    var d1 = [];
+    for (var t = 0; t <= 2 * Math.PI; t += 0.01)
+        d1.push([sumf(Math.cos, t, 10), sumf(Math.sin, t, 10)]);
+    var data = [ d1 ];
+
+    
+    var placeholder = $("#placeholder");
+    var options = {
+        pan: {
+            interactive: true
+        }
+    };
+
+    var plot = $.plot(placeholder, data, options);
+
+});
+</script>
+
+ </body>
+</html>

@@ -1,0 +1,4 @@
+﻿1. Some browsers still cache index.html. 
+
+	This is bad when we update the page, 
+	because the user doesn't see the updates.
